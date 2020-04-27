@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `user`(
+`id` BIGINT(20) NOT NULL COMMENT '主键id',
+`org_code` VARCHAR(6) DEFAULT NULL COMMENT '组织code',
+`deleted` DATETIME DEFAULT NULL  COMMENT '逻辑删除,null-未删除，其他-删除',
+`is_first_login` BIT NOT NULL DEFAULT 1 COMMENT '是否第一次登录，0不是，1(默认)是',
+`name` VARCHAR(20) DEFAULT NULL COMMENT '用户姓名',
+`en_name` VARCHAR(50) DEFAULT NULL COMMENT '英文姓名',
+`account` VARCHAR(20) DEFAULT NULL COMMENT '账户',
+`title` VARCHAR(20) DEFAULT NULL COMMENT '职位',
+`password` VARCHAR(50) DEFAULT NULL COMMENT '密码',
+`department_id` BIGINT(20) DEFAULT NULL COMMENT '部门id',
+`department_name` VARCHAR(20) DEFAULT NULL COMMENT '部门名称',
+`phone` VARCHAR(20) DEFAULT NULL COMMENT '电话',
+`email` VARCHAR(40) DEFAULT NULL COMMENT '邮箱',
+`remark` VARCHAR(60) DEFAULT NULL COMMENT '备注',
+`create_time` DATETIME DEFAULT NULL COMMENT '创建时间',
+`update_time` DATETIME DEFAULT NULL COMMENT '修改时间',
+PRIMARY KEY (`id`),
+UNIQUE KEY `account` (`account`)
+)ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='用户信息';
