@@ -1,5 +1,5 @@
 <p align="center">
- <h4> Everyone can develop projects with spring boot easily <h4>
+ Everyone can develop projects with spring boot easily
 </p>
 <p align="center">  
   <a href="https://github.com/spring-projects/spring-boot">
