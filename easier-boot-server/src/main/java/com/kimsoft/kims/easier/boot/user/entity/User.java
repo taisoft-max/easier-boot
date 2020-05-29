@@ -37,7 +37,7 @@ public class User implements Serializable {
     private String orgCode;
 
     @ApiModelProperty(value = "是否删除,0未删除，1删除")
-    // 逻辑删除
+    /** 逻辑删除 */
     @TableLogic(value = "null",delval = "now()")
     // 查询时SQL不显示此字段
     @TableField(select = false)

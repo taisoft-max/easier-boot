@@ -13,7 +13,7 @@ public enum ReturnCodeEnum {
 
     INVALID_ACCOUNT("3002", "账号无效"),
     ERROR_PASSWORD("3003","密码错误"),
-    NOT_LOGIN("3004","未登录"),
+    NOT_LOGIN("3004","Authorization failed!"),
     BAD_REQUEST("0400", "请求参数错误"),
     AUTH_NOT_FOUND("0402", "授权信息不存在"),
     FAIL("0500", "处理失败，服务器异常")
