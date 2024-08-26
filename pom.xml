@@ -24,7 +24,7 @@
     <properties>
         <java.version>1.8</java.version>
         <springboot.version>2.1.6.RELEASE</springboot.version>
-        <swagger2.version>2.9.2</swagger2.version>
+        <swagger2.version>2.10.0</swagger2.version>
         <mybaties-plus-version>3.3.1.tmp</mybaties-plus-version>
         <flyway.version>5.2.4</flyway.version>
         <commons-lang3.version>3.9</commons-lang3.version>
